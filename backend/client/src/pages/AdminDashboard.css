@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500;600&display=swap');
+
+.admin-dashboard {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  font-family: 'DM Sans', sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 1rem;
+}
+
+.dashboard-header h2 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #111;
+}
+
+.posts-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.posts-table th,
+.posts-table td {
+  padding: 13px 16px;
+  border-bottom: 1px solid #ebebeb;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.posts-table thead th {
+  background-color: #fafafa;
+  font-weight: 600;
+  color: #888;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.posts-table tbody tr:hover {
+  background-color: #fff5f1;
+}
+
+.loading-message {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+  color: #999;
+}
+
+.error-message {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+  color: #dc3545;
+}
+
+.posts-table .action-buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.action-buttons .btn {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.18s ease;
+}
+
+.action-buttons .edit-btn {
+  background-color: #fff5f1;
+  color: #e05c2a;
+  border: 1.5px solid #f5c4b0;
+}
+
+.action-buttons .edit-btn:hover {
+  background-color: #e05c2a;
+  color: #fff;
+  border-color: #e05c2a;
+}
+
+.action-buttons .delete-btn {
+  background-color: #fff0f0;
+  color: #dc3545;
+  border: 1.5px solid #f5c0c0;
+}
+
+.action-buttons .delete-btn:hover {
+  background-color: #dc3545;
+  color: #fff;
+  border-color: #dc3545;
+}
+
+.dashboard-header .create-post-btn {
+  padding: 8px 20px;
+  background-color: #111;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.18s ease, transform 0.1s;
+}
+
+.dashboard-header .create-post-btn:hover {
+  background-color: #e05c2a;
+  transform: translateY(-1px);
+}

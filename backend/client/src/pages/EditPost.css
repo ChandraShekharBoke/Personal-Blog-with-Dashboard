@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap');
+
+.edit-post-page {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.edit-post-page h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #111;
+}
+
+.edit-post-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.edit-post-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #555;
+    letter-spacing: 0.2px;
+}
+
+.edit-post-form .form-control {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1.5px solid #ebebeb;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    color: #111;
+    background: #fafafa;
+    transition: border-color 0.18s, box-shadow 0.18s, background 0.18s;
+}
+
+.edit-post-form .form-control:focus {
+    outline: none;
+    border-color: #e05c2a;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(224, 92, 42, 0.1);
+}
+
+.edit-post-form .form-control:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.edit-post-form .markdown-input {
+    min-height: 400px;
+    resize: vertical;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 0.92rem;
+    line-height: 1.7;
+}
+
+.edit-post-page .error-message {
+    color: #dc3545;
+    background: #fff0f0;
+    border: 1.5px solid #f5c0c0;
+    border-radius: 8px;
+    padding: 10px 14px;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.loading-message {
+    text-align: center;
+    padding: 60px;
+    font-size: 1.1rem;
+    color: #999;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+.edit-post-form .submit-btn {
+    background: #111;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.18s ease, transform 0.1s;
+}
+
+.edit-post-form .submit-btn:hover:not(:disabled) {
+    background: #e05c2a;
+    transform: translateY(-1px);
+}
+
+.edit-post-form .submit-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.edit-post-form .cancel-btn {
+    background: #f5f5f5;
+    color: #444;
+    border: 1.5px solid #ddd;
+    padding: 12px 28px;
+    border-radius: 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s ease;
+}
+
+.edit-post-form .cancel-btn:hover:not(:disabled) {
+    background: #ebebeb;
+}
+
+.edit-post-form .cancel-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

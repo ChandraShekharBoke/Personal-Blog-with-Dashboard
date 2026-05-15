@@ -1,0 +1,23 @@
+.category-tag {
+  display: inline-block;
+  background-color: #fff5f1;
+  color: #e05c2a;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  text-decoration: none;
+  border: 1.5px solid #f5c4b0;
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: 0.2px;
+  transition: all 0.18s ease;
+}
+
+.category-tag:hover {
+  background-color: #e05c2a;
+  color: #fff;
+  border-color: #e05c2a;
+  cursor: pointer;
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500;600&display=swap');
+
+.home-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.post-list-item {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  border: 1px solid #ebebeb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.post-list-item:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+.post-list-item h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+}
+
+.post-list-item h2 a {
+  text-decoration: none;
+  color: #111;
+  transition: color 0.18s ease;
+}
+
+.post-list-item h2 a:hover {
+  color: #e05c2a;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  background-color: #fafafa;
+  border: 1px solid #ebebeb;
+  border-radius: 12px;
+}
+
+.pagination-controls .page-info {
+  font-weight: 600;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.pagination-controls .pagination-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.pagination-controls .btn {
+  padding: 8px 20px;
+  border: 1.5px solid #111;
+  background-color: #111;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.18s ease, transform 0.1s;
+}
+
+.pagination-controls .btn:hover:not(:disabled) {
+  background-color: #e05c2a;
+  border-color: #e05c2a;
+  transform: translateY(-1px);
+}
+
+.pagination-controls .btn:disabled {
+  background-color: #f0f0f0;
+  border-color: #e0e0e0;
+  color: #bbb;
+  cursor: not-allowed;
+  transform: none;
+}
