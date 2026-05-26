@@ -13,9 +13,16 @@ app.use(express.json());
 
 const port = process.env.PORT || 5000;
 
+// Test Route
+app.get('/', (req, res) => {
+    res.send('Backend Server Running Successfully');
+});
+
+// Routes
 app.use('/api/posts', postRoutes);
 app.use('/api/auth', authRoutes);
 
+// Database Connection
 connectedDB().then(() => {
     app.listen(port, () => {
         console.log(`Server is running on port ${port}`);
