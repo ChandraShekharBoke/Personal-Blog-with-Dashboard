@@ -1,9 +1,9 @@
+require('dotenv').config(); // ⬆️ Sabse upar hona chahiye
+
 const express = require('express');
 const app = express();
 const cors = require('cors');
 const connectedDB = require('./config/DB');
-
-require('dotenv').config();
 
 const postRoutes = require('./routes/postRoutes');
 const authRoutes = require('./routes/authRoutes');
