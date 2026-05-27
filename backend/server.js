@@ -1,4 +1,4 @@
-require('dotenv').config(); // ⬆️ Sabse upar hona chahiye
+require('dotenv').config();
 
 const express = require('express');
 const app = express();
