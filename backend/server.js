@@ -15,12 +15,10 @@ app.use(express.json());
 
 const port = process.env.PORT || 5000;
 
-// Test Route
 app.get('/', (req, res) => {
     res.send('Backend Server Running Successfully');
 });
 
-// Routes
 app.use('/api/posts', postRoutes);
 app.use('/api/auth', authRoutes);
 
@@ -29,4 +27,7 @@ connectedDB().then(() => {
     app.listen(port, () => {
         console.log(`Server is running on port ${port}`);
     });
+}).catch((err) => {
+    console.error('DB Connection Failed:', err.message);
+    process.exit(1);
 });
