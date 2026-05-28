@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiService = axios.create({
-    baseURL: process.env.REACT_APP_API_URL || 'http://localhost:5000/api',
+    baseURL: 'https://personal-blog-with-dashboard-7.onrender.com/api',
 });
 
 apiService.interceptors.request.use(
