@@ -9,6 +9,7 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
   font-family: 'DM Sans', sans-serif;
   overflow-x: auto;
+  box-sizing: border-box;
 }
 
 .dashboard-header {
@@ -170,11 +171,13 @@
 @media (max-width: 480px) {
   .admin-dashboard {
     padding: 1rem;
+    margin: 0.5rem;
     border-radius: 8px;
   }
 
   .dashboard-header h2 {
     font-size: 1.3rem;
+    white-space: nowrap;
   }
 
   .dashboard-header .create-post-btn {
