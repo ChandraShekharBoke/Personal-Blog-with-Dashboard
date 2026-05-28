@@ -8,15 +8,18 @@
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
   font-family: 'DM Sans', sans-serif;
+  overflow-x: auto;
 }
 
 .dashboard-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
   margin-bottom: 2rem;
   border-bottom: 2px solid #f0f0f0;
   padding-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .dashboard-header h2 {
@@ -29,6 +32,7 @@
 .posts-table {
   width: 100%;
   border-collapse: collapse;
+  min-width: 650px;
 }
 
 .posts-table th,
@@ -52,17 +56,18 @@
   background-color: #fff5f1;
 }
 
-.loading-message {
-  text-align: center;
-  padding: 2rem;
-  font-size: 1.1rem;
-  color: #999;
-}
-
+.loading-message,
 .error-message {
   text-align: center;
   padding: 2rem;
   font-size: 1.1rem;
+}
+
+.loading-message {
+  color: #999;
+}
+
+.error-message {
   color: #dc3545;
 }
 
@@ -70,6 +75,7 @@
   display: flex;
   gap: 8px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .action-buttons .btn {
@@ -120,9 +126,82 @@
   font-weight: 600;
   font-size: 0.9rem;
   transition: background 0.18s ease, transform 0.1s;
+  white-space: nowrap;
 }
 
 .dashboard-header .create-post-btn:hover {
   background-color: #e05c2a;
   transform: translateY(-1px);
+}
+
+/* =========================
+   TABLET RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .admin-dashboard {
+    padding: 1.2rem;
+    margin: 1rem;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .posts-table th,
+  .posts-table td {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  .action-buttons .btn {
+    padding: 5px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 480px) {
+  .admin-dashboard {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .dashboard-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .dashboard-header .create-post-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .posts-table {
+    min-width: 100%;
+  }
+
+  .posts-table th,
+  .posts-table td {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  .posts-table thead th {
+    font-size: 0.7rem;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .action-buttons .btn {
+    width: 100%;
+  }
 }
